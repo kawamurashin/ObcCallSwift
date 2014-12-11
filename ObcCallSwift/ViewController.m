@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ObcCallSwift-Swift.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    SwiftClass *swObj = [[SwiftClass alloc] init];
+    NSString *string = @"文字";
+    NSNumber *number = [NSNumber numberWithShort:32767];
+    BOOL YESNO = YES;
+    NSLog(@"YESNO: %d",YESNO);
+    NSLog([swObj swiftJoinString:string number:number]);
+    NSLog([swObj testfunc]);
+    
 }
 
 - (void)didReceiveMemoryWarning {

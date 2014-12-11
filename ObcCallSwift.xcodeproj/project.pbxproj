@@ -14,6 +14,7 @@
 		54BBD6F01A399D4800B4CE6B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BBD6EF1A399D4800B4CE6B /* Images.xcassets */; };
 		54BBD6F31A399D4800B4CE6B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54BBD6F11A399D4800B4CE6B /* LaunchScreen.xib */; };
 		54BBD6FF1A399D4800B4CE6B /* ObcCallSwiftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BBD6FE1A399D4800B4CE6B /* ObcCallSwiftTests.m */; };
+		54BBD70A1A399D9F00B4CE6B /* SwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BBD7091A399D9F00B4CE6B /* SwiftClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		54BBD6F81A399D4800B4CE6B /* ObcCallSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObcCallSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54BBD6FD1A399D4800B4CE6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54BBD6FE1A399D4800B4CE6B /* ObcCallSwiftTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObcCallSwiftTests.m; sourceTree = "<group>"; };
+		54BBD7081A399D9F00B4CE6B /* ObcCallSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObcCallSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		54BBD7091A399D9F00B4CE6B /* SwiftClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +86,14 @@
 			children = (
 				54BBD6E61A399D4800B4CE6B /* AppDelegate.h */,
 				54BBD6E71A399D4800B4CE6B /* AppDelegate.m */,
+				54BBD7091A399D9F00B4CE6B /* SwiftClass.swift */,
 				54BBD6E91A399D4800B4CE6B /* ViewController.h */,
 				54BBD6EA1A399D4800B4CE6B /* ViewController.m */,
 				54BBD6EC1A399D4800B4CE6B /* Main.storyboard */,
 				54BBD6EF1A399D4800B4CE6B /* Images.xcassets */,
 				54BBD6F11A399D4800B4CE6B /* LaunchScreen.xib */,
 				54BBD6E21A399D4800B4CE6B /* Supporting Files */,
+				54BBD7081A399D9F00B4CE6B /* ObcCallSwift-Bridging-Header.h */,
 			);
 			path = ObcCallSwift;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			files = (
 				54BBD6EB1A399D4800B4CE6B /* ViewController.m in Sources */,
 				54BBD6E81A399D4800B4CE6B /* AppDelegate.m in Sources */,
+				54BBD70A1A399D9F00B4CE6B /* SwiftClass.swift in Sources */,
 				54BBD6E51A399D4800B4CE6B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,9 +349,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ObcCallSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObcCallSwift/ObcCallSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -353,9 +362,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ObcCallSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObcCallSwift/ObcCallSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};
